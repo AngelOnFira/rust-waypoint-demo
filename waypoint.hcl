@@ -10,12 +10,6 @@ app "rust-demo" {
   }
 
   deploy {
-    use "nomad" {
-      datacenter = "awetza"
-    }
-  }
-
-  deploy {
     use "nomad-jobspec" {
       // Templated to perhaps bring in the artifact from a previous
       // build/registry, entrypoint env vars, etc.
